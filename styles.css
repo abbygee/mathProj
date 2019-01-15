@@ -1,3 +1,6 @@
+body{
+    font-family: Vogue;
+}
 canvas {
     border: 20px #334185;
     margin: auto;

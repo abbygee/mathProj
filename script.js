@@ -8,7 +8,7 @@ window.onload = function() {
     cx = canvas.width / 2;
     cy = canvas.height / 2;
     ctx.translate(cx, cy);
-    ctx.fillStyle = "#4169E1";
+    ctx.fillStyle = "#ecd6d2";
     ctx.lineWidth = 2;
     ctx.fillRect(-cx, -cy, 2 * cx, 2 * cy);
     ctx.strokeStyle = "white";

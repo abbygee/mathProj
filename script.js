@@ -22,8 +22,8 @@ slide.oninput = function() {
 };
 
 function koch(start,end,iteration) {
-    var x1 = (end[0] - start[0] )*1/3 + start[0];
-    var y1 = (end[1] -start[1] )*1/3 + start[1];
+    var x1 = (end[0] - start[0])/3 + start[0];
+    var y1 = (end[1] - start[1])/3 + start[1];
     var x2 = (end[0] - start[0])*2/3 + start[0];
     var y2 = (end[1] - start[1])*2/3 + start[1];
     var x3 = ((x1 + x2) + Math.sqrt(3)*(-y1 + y2))/2;
@@ -31,9 +31,9 @@ function koch(start,end,iteration) {
 
     ctx.beginPath();
 
-    // One third Line and Two third Line
+    // one third line and the two third line
     ctx.moveTo(start[0],start[1]);
-    // Start Vektor plus 1/3 or 2/3 of the span
+    // start the vector plus 1/3 or 2/3 of the span
     ctx.lineTo(x1,y1);
     ctx.moveTo(x2,y2);
     ctx.lineTo(end[0],end[1]);

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Concert One' rel='stylesheet'>
     <title>Abby's Koch Fractal</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -10,9 +11,9 @@
 <div class="container">
     <canvas id="koch"></canvas>
 </div>
-<div class="slider">
-    <label for="slide">Iteration Step:</label>
-    <input id="slide" type="range" min="0" max="7" value="7"/>
+<div class="slidecontainer">
+    <label>Stages [0-5]:</label>
+    <input type="range" min="0" max="4" value="4" class="slider" id="myRange">
 </div>
 <script src="script.js"></script>
 </body>
